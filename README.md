@@ -34,6 +34,13 @@ Preferences:
 ## Run
 This tool requires Python 3 to run.  No additional libraries are required.
 
+# Compatibility
+
+When running [f.lux](https://justgetflux.com/), the white point must be Dim 0.3
+or higher, or else f.lux will revert the white point to its usual value.  To
+use the Dim 0.1 or Dim 0.2 settings, quit f.lux first and then select the
+reduced white point.
+
 # TODO
 
 - Write tooling to select a particular color profile without needing to open
