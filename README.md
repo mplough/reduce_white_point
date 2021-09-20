@@ -14,7 +14,7 @@ The color profile generator requires root privileges to write color profiles to
 a system location, so it must be run with `sudo`:
 
 ```bash
-./reduce_white_point.py
+sudo ./reduce_white_point.py
 ```
 
 If you don't trust it, that's fine -- write the color profiles to the working
