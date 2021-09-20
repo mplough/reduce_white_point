@@ -28,7 +28,7 @@ sudo cp *.icc /Library/ColorSync/Profiles/Displays/
 Once the tool is run, new color profiles will be available in System
 Preferences:
 
-![New color profiles](img/New color profiles.png)
+![New color profiles](img/new_color_profiles.png)
 
 # Dependencies
 ## Run
