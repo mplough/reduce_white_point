@@ -31,10 +31,12 @@ def icc_brightness_int(brightness: float, min_brightness = 0.05) -> int:
 
 
 def pack_uint32be(brightness_int: int) -> bytes:
+    """Color values are stored as 4-byte unsigned integers in big-endian byte order."""
     return struct.pack(">L", brightness_int)
 
 
 def pack_profile_name(name: str) -> bytes:
+    """Localized profile names are stored as UTF-16LE as best I can tell."""
     profile_name_bytes = name.encode("utf-16le")
     return profile_name_bytes
 
@@ -108,10 +110,3 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
     main(args)
-
-
-# TODO
-# - see if I can write an AppleScript or something to select a particular color profile without
-#   going into the settings
-# - write up a README
-# - write up this cheap hack - blog post
